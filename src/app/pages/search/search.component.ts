@@ -1,12 +1,13 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
+
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class SearchComponent implements OnInit {
   public searchForm = this.formBuilder.group({
     title: ['' || localStorage.getItem('title')?.split("+").join(' ')],
     author: ['' || localStorage.getItem('author')?.split("+").join(' ')],
@@ -64,5 +65,6 @@ export class HeaderComponent implements OnInit {
     localStorage.setItem('author', author)
     localStorage.setItem('subject', subject)
   }
+
 
 }

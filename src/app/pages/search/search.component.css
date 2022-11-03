@@ -1,0 +1,17 @@
+.error {
+    color: red;
+}
+.search{
+    color: #00ABB3;
+    border-color: #00ABB3;
+    width: 150px;
+}
+.search:hover{
+    background-color: #fff;
+    color: #00ABB3;
+}
+
+input{
+    border-color: #00ABB3;
+    color: #00ABB3;
+}

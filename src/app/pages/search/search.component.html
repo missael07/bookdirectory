@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col">
+        <form class="d-flex justify-content-center form-horizontal form-material" id = 'searchForm' autocomplete="off" [formGroup]="searchForm" (submit)="search()">
+            <div class="row">
+                <div class="col-md-3 col-xs-12">
+                    <input class="form-control me-2" type="search" placeholder="Title" aria-label="Search" formControlName="title" data-bs-toggle="tooltip" data-bs-placement="top" title="Must contain spaces">
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <input class="form-control me-2" type="search" placeholder="Author" aria-label="Search" formControlName="author" data-bs-toggle="tooltip" data-bs-placement="top" title="Must contain spaces">
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <input class="form-control me-2" type="search" placeholder="Subject" aria-label="Search" formControlName="subject" data-bs-toggle="tooltip" data-bs-placement="top" title="Must contain spaces">
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <button class="btn btn-outline search" type="submit">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row d-flex justify-content-center">
+    <div class="col-12"><small class="d-flex justify-content-center error" *ngIf="hasErrors">* Almost one of the filters must have value.</small></div>
+</div>

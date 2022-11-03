@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BookServiceService } from 'src/app/services/book-service.service';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-pages',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.css']
 })
 export class PagesComponent implements OnInit {
-
-  constructor() { }
+  public bookList: any[] = [];
+  public loading: boolean = true;
+  book ='';
+  constructor(private bookService: BookServiceService, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;
+    }, 3000);
   }
-
 }

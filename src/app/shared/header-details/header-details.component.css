@@ -1,0 +1,16 @@
+.nav {
+    background-color: #00ABB3;
+    padding-left: 5px;
+}
+.error {
+    color: white;
+    padding-left: 10%
+}
+.search{
+    color: #fff;
+    border-color: #fff;
+}
+.search:hover{
+    background-color: #fff;
+    color: #00ABB3;
+}

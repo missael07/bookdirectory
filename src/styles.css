@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+/* body{
+    background-color: #B9E0FF;
+} */
+.cover{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    margin: 5px;
+    height: 95%;
+    width: 100%;
+    background-color: #00ABB3;
+}
+
+.card-background{
+    border-color: #00ABB3;
+}
+
+
+a{
+    text-decoration: none;
+    color: #00ABB3;
+    font-style: italic;
+}
+a:hover{
+    cursor: pointer;
+    color: #00ABB3;
+}

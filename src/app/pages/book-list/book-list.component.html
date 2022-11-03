@@ -1,1 +1,24 @@
-<p>book-list works!</p>
+<div class="row">
+    <div class="col-md-4 mb-5  animate__animated animate__jackInTheBox animate__delay-1s" *ngFor="let book of bookList" >
+        <div class="card mb-3 card-background" style="height: 100%; cursor: pointer;" (click)="showDetails(book)" >
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img  [src]="book.cover_i | cover " class="img-fluid cover" [alt]="book.title">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ book.title }}</h5>
+                        <p class="card-text">{{ book.first_publish_year ? 'First Publish Year: ' + book.first_publish_year : ''}} </p>
+                        <p class="card-text">{{ book.number_of_pages_median ? 'No. Pages: ' + book.number_of_pages_median : ''  }} </p>
+                        <p class="card-text">
+                            <small > {{ book.subject ? 'Subject: ' +( book.subject  | subject ): ''}} </small>
+                        </p>
+                        <p class="card-text">
+                            <small >Author: {{ book.author_name }} </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

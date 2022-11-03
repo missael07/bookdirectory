@@ -1,0 +1,42 @@
+.letter{
+    font-family: 'Courier New', Courier, monospace;
+  
+    border-right: .15em solid #18BDEC;
+    animation: blink 1s steps(1) infinite;
+  }
+.title {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: "Courier New";
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(18) 3s 1 normal both, blink 1s steps(1) infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 76%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  .center {
+    width: 76%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+
+  .subtitle{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
